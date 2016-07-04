@@ -2,12 +2,30 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+	.navbar-inverse.transparent-nav {
+		background-color: rgba(0,0,0,.7);
+		transition: all .5s ease-in-out;
+		border: none;
+		margin-bottom: 0;
+	}
+	.navbar-inverse.transparent-nav .navbar-brand img,
+	.navbar-inverse.transparent-nav .navbar-nav>li>a{
+		margin: 0;
+	}
+	.top-owl-carousel>div p{
+		padding: 0 80px;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	.testimonials-box {
+		font-size: 15px;
+		padding: 80px;
+	}
+	.top-owl-carousel>div p{
+		padding: 0 60px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -35,11 +53,32 @@
 		animation: none !important;
 	}
 
+	.testimonials-box {
+		font-size: 15px;
+		padding: 60px;
+	}
+	.top-owl-carousel>div p{
+		padding: 0 40px;
+	}
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	h1, .h1 {
+		font-size: 48px;
+	}
+	.top-owl-carousel>div i{
+		font-size: 90px;
+		line-height: 90px;
+	}
+	.top-owl-carousel>div p{
+		padding: 0 20px;
+	}
+	.testimonials-box {
+		font-size: 15px;
+		padding: 20px;
+	}
 }
 
 /* Custom, iPhone Retina */

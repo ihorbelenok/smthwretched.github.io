@@ -9,7 +9,7 @@ $(function() {
 
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("form").submit(function() { //Change
+	$("#contactForm").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
 			type: "POST",
@@ -25,18 +25,12 @@ $(function() {
 		return false;
 	});
 
-	//Chrome Smooth Scroll
-	try {
-		$.browserSelector();
-		if($("html").hasClass("chrome")) {
-			$.smoothScroll();
-		}
-	} catch(err) {
-
-	};
-
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 	
+});
+
+$(".scroll-top").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
 });
 
 $(window).load(function() {
@@ -75,10 +69,25 @@ $(document).ready(function(){
 
 	$(".news-owl-carousel").owlCarousel({
 		loop: true,
-		items: 4,
 		center: false,
 		dots: true,
-		autoplay: true
+		autoplay: true,
+		responsive : {
+    // breakpoint from 0 up
+    0 : {
+        items: 1
+    },
+    480 : {
+        items: 2
+    },
+    768 : {
+        items: 3
+    },
+    // breakpoint from 768 up
+    991 : {
+        items: 4
+    }
+}
 	});
 
 	$(".testimonials-carousel").owlCarousel({
@@ -104,8 +113,20 @@ $(document).ready(function(){
   }
   );
 	wow.init();
+	$('a').smoothScroll();
 
 	$(function(){
     $('#filter-container').mixItUp();
 	});
 });
+
+$(window).on("scroll", function () {
+            if ($(window).scrollTop() > 200) {
+                $(".navbar").removeClass("transparent-nav");
+                $(".scroll-top").css("display", "block");
+            }
+            else {
+                $(".navbar").addClass("transparent-nav");
+                $(".scroll-top").css("display", "none");
+            }
+        });

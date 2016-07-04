@@ -82,9 +82,74 @@ h3, .h3 {
 	font-size: 18px;
 }
 
-a, a:hover, a:visited {
+a, a:hover, a:visited{
 	color: #f1f1f1;
 	text-decoration: none;
+}
+
+.scroll-top{
+	text-align: center;
+	display: none;
+	color: #f1f1f1;
+	background-color: rgba(0,0,0,.5);
+	position: fixed;
+	height: 40px;
+	width: 40px;
+	font-size: 18px;
+	line-height: 40px;
+	text-align: center;
+	z-index: 1000;
+	border-radius: 50%;
+	right: 20px;
+	bottom: 20px;
+	transition: all 0.5s ease;
+}
+
+.navbar-toggle, .navbar-toggle:hover,
+.navbar-toggle:focus {
+	border: none;
+
+}
+
+.scroll-top:hover {
+	background-color: rgba(0,0,0,.7);
+}
+
+.navbar-brand {
+	padding: 2px;
+}
+
+.navbar-brand img{
+	height: 100%;
+	transition: all .5s ease-in-out;
+}
+
+.navbar-inverse {
+	background-color: rgba(0,0,0,.7);
+	transition: all .5s ease-in-out;
+	border: none;
+	margin-bottom: 0;
+}
+
+.navbar-inverse.transparent-nav {
+	background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #f1f1f1;
+	transition: all .5s ease-in-out;
+}
+
+.navbar-inverse.transparent-nav .navbar-brand img,
+.navbar-inverse.transparent-nav .navbar-nav>li>a{
+	margin: 10px 0;
+}
+
+.navbar-inverse .navbar-nav>li.active>a,
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li.active>a:hover {
+	font-weight: bold;
+	background-color: transparent;
 }
 
 .btn-transparent {
@@ -135,10 +200,6 @@ section {
 	position: relative;
 	margin: 10px auto 0;
 	content: " ";
-}
-
-.navbar {
-	margin-bottom: 0;
 }
 
 #top-carousel {
@@ -250,7 +311,7 @@ section {
 	border: #f1f1f1 2px solid;
 	border-radius: 50%;
 	text-align: center;
-	padding: 11px 13px;
+	padding: 7px 14px;
 }
 
 .gallery-pic:hover>.overlay>a {
@@ -380,6 +441,7 @@ section {
 	background-color: rgba(241,241,241,.2);
 	transition: all .7s ease;
 	padding: 20px;
+	margin-bottom: 40px;
 }
 
 .price-box:hover{
@@ -453,6 +515,7 @@ section {
 .dark-transparent{
 	background-color: rgba(0,0,0,.5);
 	border: solid 1px #000;
+	color: #f1f1f1;
 }
 
 .btn-submit {

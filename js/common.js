@@ -81,6 +81,14 @@ $(document).ready(function(){
 		autoplay: true
 	});
 
+	$(".testimonials-carousel").owlCarousel({
+		loop: true,
+		items: 1,
+		center: true,
+		dots: true,
+		autoplay: true
+	});
+
 	var wow = new WOW(
 	{
     boxClass:     'wow',      // animated element css class (default is wow)

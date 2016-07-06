@@ -130,11 +130,11 @@ $(".portfolio-carousel").owlCarousel({
     	items: 2
     },
     768 : {
-    	items: 3
+    	items: 2
     },
     // breakpoint from 768 up
     991 : {
-    	items: 3
+    	items: 2
     }
   }
 });

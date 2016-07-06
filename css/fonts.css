@@ -1,17 +1,45 @@
 @font-face {
-	font-family: "OpenSans";
-	src: url("../fonts/opensans/opensans.eot");
-	src: url("../fonts/opensans/opensans.woff") format("woff"),
-			 url("../fonts/opensans/opensans.ttf") format("truetype");
+	font-family: "RobotoRegular";
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
+			 url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+			 url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
 
 @font-face {
-	font-family: "OpenSans";
-	src: url("../fonts/opensans/opensansbold.eot");
-	src: url("../fonts/opensans/opensansbold.woff") format("woff"),
-			 url("../fonts/opensans/opensansbold.ttf") format("truetype");
+	font-family: "GNUTypewriter";
+	src: url("../fonts/gnutypewriter/gnutypewriter.woff2") format('woff2');
+	src: url("../fonts/gnutypewriter/gnutypewriter.woff") format("woff"),
+		 url("../fonts/gnutypewriter/gnutypewriter.ttf") format("truetype");
 	font-style: normal;
-	font-weight: bold;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "arvo";
+	src: url("../fonts/arvo/arvo.woff2") format('woff2');
+	src: url("../fonts/arvo/arvo.woff") format("woff"),
+		 url("../fonts/arvo/arvo.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "arimo";
+	src: url("../fonts/arimo/arimo.woff2") format('woff2');
+	src: url("../fonts/arimo/arimo.woff") format("woff"),
+		 url("../fonts/arimo/arimo.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "arimo";
+	src: url("../fonts/arimo/arimobold.woff2") format('woff2');
+	src: url("../fonts/arimo/arimobold.woff") format("woff"),
+		 url("../fonts/arimo/arimobold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 700;
 }

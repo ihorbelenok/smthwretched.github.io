@@ -26,17 +26,32 @@ $(window).load(function() {
 	}
 });
 
-$(".greeting").typed({
-	loop: false,
-	strings: ["a web-developer", "a freelancer", "Antik"],
-	typeSpeed: 25,
-	backSpeed: 10,
-	startDelay: 500,
-	backDelay: 500,
-	callback: function() {
-		$('.second-line').fadeIn("slow");	
-	}
-});
+if ($(window).width() <= 320) {
+	$(".greeting").typed({
+		loop: false,
+		strings: ["a web-developer", "a freelancer", "Antik"],
+		typeSpeed: 25,
+		backSpeed: 10,
+		startDelay: 500,
+		backDelay: 500,
+		callback: function() {
+			$('.second-line').fadeIn("slow");	
+		}
+	});
+}
+else {
+	$(".greeting").typed({
+		loop: false,
+		strings: ["Antik"],
+		typeSpeed: 25,
+		backSpeed: 10,
+		startDelay: 500,
+		backDelay: 500,
+		callback: function() {
+			$('.second-line').fadeIn("slow");	
+		}
+	});
+}
 
 $('.prof-skills').highcharts({
 	chart: {

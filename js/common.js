@@ -168,6 +168,7 @@ $('[data-toggle="tooltip"]').tooltip();
 		}
 	});
 
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load('particles-bg', 'libs/particles/particles.json', function() {
   console.log('callback - particles.js config loaded');
 });

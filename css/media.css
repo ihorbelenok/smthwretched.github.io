@@ -2,8 +2,8 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-	.top-container {
-		font-size: 34px;
+	.first-line {
+		font-size: 36px;
 	}
 
 	.arrow {
@@ -14,9 +14,13 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	.top-container {
-		font-size: 26px;
+	.first-line {
+		font-size: 29px;
 	}
+	.second-line {
+		font-size: 23px;
+	}
+
 	.arrow {
 		font-size: 26px;
 		line-height: 26px;
@@ -25,8 +29,9 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-	.top-container {
-		font-size: 20px;
+	.first-line {
+		font-size: 18px;
+		font-weight: normal;
 	}
 	
 	/*Disable Animation on Mobile Devices*/
@@ -80,7 +85,10 @@
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 	.first-line{
-		font-size: 20px;
+		font-size: 16px;
+	}
+	.second-line{
+		font-size: 14px;
 	}
 	.arrow {
 		font-size: 18px;

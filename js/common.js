@@ -34,26 +34,8 @@ $("#greeting").typed({
 	startDelay: 500,
 	backDelay: 500,
 	callback: function() {
-		if (small_media) {
-			$('.top-container .row').animate({'padding-top':"75px"}, "slow", function(){
-				$('.second-line').fadeIn("slow");
-			});
-		}
-		else {
-			$('.second-line').fadeIn("slow",function(){$('.link-line').fadeIn("slow");});	
-		}
-		
+		$('.second-line').fadeIn("slow");	
 	}
-});
-
-$(window).on("scroll", function () {
-	if ($(window).scrollTop() > 400) {
-		$(".nav").css("display", "inline-block");
-	}
-});
-
-$(".link-line a").on("click", function(){
-	$("body").css("overflow-y", "visible");
 });
 
 $('.prof-skills').highcharts({
@@ -123,30 +105,6 @@ $('.pers-skills').highcharts({
 		showInLegend: false,
 		data: [80, 90, 75, 100, 100, 80, 80, 90, 80],
 	}]
-});
-
-$(".portfolio-carousel").owlCarousel({
-	loop: true,
-	center: false,
-	dots: true,
-	autoplay: true,
-	autoplayHoverPause:true,
-	responsive : {
-    // breakpoint from 0 up
-    0 : {
-    	items: 1
-    },
-    480 : {
-    	items: 2
-    },
-    768 : {
-    	items: 2
-    },
-    // breakpoint from 768 up
-    991 : {
-    	items: 2
-    }
-  }
 });
 
 $('[data-toggle="tooltip"]').tooltip();

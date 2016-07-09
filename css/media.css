@@ -92,10 +92,7 @@
 		font-size: 20px;
 		line-height: 20px;
 	}
-		.prof-skills,
-	.pers-skills {
-		height: 300px;
-	}
+
 }
 
 /* Custom, iPhone Retina */
@@ -121,6 +118,10 @@
 	.arrow {
 		font-size: 18px;
 		line-height: 18px;
+	}
+	.prof-skills,
+	.pers-skills {
+		height: 300px;
 	}
 }
 

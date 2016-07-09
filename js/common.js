@@ -36,7 +36,7 @@ $("#greeting").typed({
 	callback: function() {
 		if (small_media) {
 			$('.top-container .row').animate({'padding-top':"75px"}, "slow", function(){
-				$('.second-line').fadeIn("slow",function(){$('.link-line').fadeIn("slow");});
+				$('.second-line').fadeIn("slow");
 			});
 		}
 		else {
@@ -65,13 +65,12 @@ $('.prof-skills').highcharts({
 		enabled: false
 	},
 	title: {
-		text: 'Professional skills',
-		style: {"color": "#f0f0f0", "fontSize": "24px"},
+		text: null,
 	},
 	xAxis: {
 		categories: ['HTML', 'CSS', 'jQuery', 'Django', 'Bootstrap' ,'Photoshop', 'Linux', 'SQL', 'Git'],
 		labels: {
-			style: {"color": "#f0f0f0", "shadow": "none", "fontSize": "18px"},
+			style: {"color": "#f0f0f0", "shadow": "none", "fontSize": "14px"},
 		},
 		gridLineColor: 'transparent',
 	},
@@ -100,19 +99,18 @@ $('.pers-skills').highcharts({
 		enabled: false
 	},
 	title: {
-		text: 'Personal skills',
-		style: {"color": "#f0f0f0", "fontSize": "24px"},
+		text: null,
 	},
 	xAxis: {
 		categories: ['Attentive', 'Accurate', 'Cooperative', 'Dedicated', 'Efficient', 'Flexible', 'Motivated', 'Reliable', 'Responsible'],
 		labels: {
-			style: {"color": "#f0f0f0", "shadow": "none", "fontSize": "18px"},
+			style: {"color": "#f0f0f0", "shadow": "none", "fontSize": "14px"},
 		},
 		gridLineColor: 'transparent',
-		opposite: true,
+		opposite: false,
 	},
 	yAxis: {
-		max: 0,
+		max: 100,
 		labels: {enabled: false},
 		title: {enabled: false},
 		gridLineColor: 'transparent',
@@ -123,15 +121,9 @@ $('.pers-skills').highcharts({
 	series: [{
 		name: '',
 		showInLegend: false,
-		data: [-80, -90, -75, -100, -100, -80, -80, -90, -80],
+		data: [80, 90, 75, 100, 100, 80, 80, 90, 80],
 	}]
 });
-
-if (small_media) {
-	$('.pers-skills').highcharts().xAxis[0].update({opposite: false});
-	$('.pers-skills').highcharts().yAxis[0].update({max: 100});
-	$('.pers-skills').highcharts().series[0].setData([80, 90, 75, 100, 100, 80, 80, 90, 80]);
-}
 
 $(".portfolio-carousel").owlCarousel({
 	loop: true,
@@ -277,6 +269,29 @@ particlesJS("particles-bg", {
     }
   },
   "retina_detect": true
+});
+
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+    	navigation: true,
+		navigationPosition: 'right',
+    });
+});
+
+$('.arrow-right').on('click', function(){
+  $.fn.fullpage.moveSlideRight();
+});
+
+$('.arrow-left').on('click', function(){
+  $.fn.fullpage.moveSlideLeft();
+});
+
+$('.arrow-down').on('click', function(){
+  $.fn.fullpage.moveSectionDown();
+});
+
+$('.arrow-up').on('click', function(){
+  $.fn.fullpage.moveSectionUp();
 });
 
 

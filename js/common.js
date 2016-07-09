@@ -26,9 +26,9 @@ $(window).load(function() {
 	}
 });
 
-$("#greeting").typed({
+$(".greeting").typed({
 	loop: false,
-	strings: ["a web-developer.", "a freelancer.", "Antik."],
+	strings: ["a web-developer", "a freelancer", "Antik"],
 	typeSpeed: 25,
 	backSpeed: 10,
 	startDelay: 500,

@@ -69,6 +69,13 @@ $('.prof-skills').highcharts({
 	title: {
 		text: null,
 	},
+	plotOptions: {
+        series: {
+            pointWidth: parseInt(hc_fz)+6,
+            groupPadding: 0,
+            pointPadding: 0,
+        }
+    },
 	xAxis: {
 		categories: ['HTML', 'CSS', 'jQuery', 'Django', 'Bootstrap' ,'Photoshop', 'Linux', 'SQL', 'Git'],
 		labels: {
@@ -85,6 +92,7 @@ $('.prof-skills').highcharts({
 		labels: {enabled: false},
 		title: {enabled: false},
 		gridLineColor: 'transparent',
+		tickPixelInterval: parseInt(hc_fz)+4,
 	},
 	credits: {
 		enabled: false
@@ -92,8 +100,6 @@ $('.prof-skills').highcharts({
 	series: [{
 		name: '',
 		showInLegend: false,
-		pointPadding: 0,
-		groupPadding: 0,
 		data: [90, 80, 70, 50, 100, 50, 80, 70, 80],
 	}]
 });
@@ -109,6 +115,13 @@ $('.pers-skills').highcharts({
 	title: {
 		text: null,
 	},
+	plotOptions: {
+        series: {
+            pointWidth: parseInt(hc_fz)+4,
+            groupPadding: 0,
+            pointPadding: 0,
+        }
+    },
 	xAxis: {
 		categories: ['Attentive', 'Accurate', 'Cooperative', 'Dedicated', 'Efficient', 'Flexible', 'Motivated', 'Reliable', 'Responsible'],
 		labels: {
@@ -132,8 +145,6 @@ $('.pers-skills').highcharts({
 	},
 	series: [{
 		name: '',
-		pointPadding: 0,
-		groupPadding: 0,
 		showInLegend: false,
 		data: [80, 90, 75, 100, 100, 80, 80, 90, 80],
 	}]

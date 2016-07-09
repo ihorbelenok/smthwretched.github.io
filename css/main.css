@@ -82,13 +82,12 @@ section {
 }
 
 .background {
-	background: url(../img/videobg.png);
+	
 }
 
 .top-container {
-	min-height: 100vh;
+	height: 100vh;
 	font-family: "arimo";
-	font-size: 41px;
 }
 
 .top-container .row {

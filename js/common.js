@@ -1,3 +1,8 @@
+var small_media = false;
+if ($(window).width() < 480) {
+	small_media = true;
+}
+
 $(function() {
 
 	//SVG Fallback
@@ -30,7 +35,15 @@ $("#greeting").typed({
 	startDelay: 500,
 	backDelay: 500,
 	callback: function() {
-		$('.second-line').fadeIn("slow",function(){$('.link-line').fadeIn("slow");});
+		if (small_media) {
+			$('.top-container .row').animate({'padding-top':"75px"}, "slow", function(){
+				$('.second-line').fadeIn("slow",function(){$('.link-line').fadeIn("slow");});
+			});
+		}
+		else {
+			$('.second-line').fadeIn("slow",function(){$('.link-line').fadeIn("slow");});	
+		}
+		
 	}
 });
 
@@ -115,6 +128,12 @@ $('.pers-skills').highcharts({
 	}]
 });
 
+if (small_media) {
+	$('.pers-skills').highcharts().xAxis[0].update({opposite: false});
+	$('.pers-skills').highcharts().yAxis[0].update({max: 100});
+	$('.pers-skills').highcharts().series[0].setData([80, 90, 75, 100, 100, 80, 80, 90, 80]);
+}
+
 $(".portfolio-carousel").owlCarousel({
 	loop: true,
 	center: false,
@@ -148,5 +167,9 @@ $('[data-toggle="tooltip"]').tooltip();
 			enabled:true
 		}
 	});
+
+particlesJS.load('particles-bg', 'libs/particles/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
 
 

@@ -29,10 +29,6 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-	.highcharts-axis-labels{
-		font-size: 12px;
-	}
-
 	.top-container .row {
 		padding-top: 40vh;
 	}
@@ -96,12 +92,16 @@
 		font-size: 20px;
 		line-height: 20px;
 	}
+		.prof-skills,
+	.pers-skills {
+		height: 300px;
+	}
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 	body {
-		font-size: 10px;
+		font-size: 14px;
 	}
 
 	#skills p {

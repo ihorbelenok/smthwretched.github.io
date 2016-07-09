@@ -71,9 +71,11 @@ $('.prof-skills').highcharts({
 	},
 	plotOptions: {
         series: {
-            pointWidth: parseInt(hc_fz)+6,
-            groupPadding: 0,
+        	pointWidth: parseInt(hc_fz)+6,
             pointPadding: 0,
+            groupPadding: 0,
+            borderWidth: 0,
+            shadow: false
         }
     },
 	xAxis: {
@@ -92,7 +94,6 @@ $('.prof-skills').highcharts({
 		labels: {enabled: false},
 		title: {enabled: false},
 		gridLineColor: 'transparent',
-		tickPixelInterval: parseInt(hc_fz)+4,
 	},
 	credits: {
 		enabled: false
@@ -117,9 +118,11 @@ $('.pers-skills').highcharts({
 	},
 	plotOptions: {
         series: {
-            pointWidth: parseInt(hc_fz)+4,
-            groupPadding: 0,
+            pointWidth: parseInt(hc_fz)+6,
             pointPadding: 0,
+            groupPadding: 0,
+            borderWidth: 0,
+            shadow: false
         }
     },
 	xAxis: {

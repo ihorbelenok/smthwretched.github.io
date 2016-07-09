@@ -223,10 +223,6 @@ body {
 	transition: all .4s linear;
 }
 
-#fp-nav ul li a span, .fp-slidesNav ul li a span {
-	background: #ffffff;
-}
-
 .arrow {
 	display: block;
 	position: absolute;

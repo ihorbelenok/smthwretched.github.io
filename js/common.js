@@ -71,9 +71,9 @@ $('.prof-skills').highcharts({
 	},
 	plotOptions: {
         series: {
-        	pointWidth: parseInt(hc_fz)+6,
+        	maxPointWidth: 50,
             pointPadding: 0,
-            groupPadding: 0,
+            groupPadding: 0.1,
             borderWidth: 0,
             shadow: false
         }
@@ -118,9 +118,9 @@ $('.pers-skills').highcharts({
 	},
 	plotOptions: {
         series: {
-            pointWidth: parseInt(hc_fz)+6,
+            maxPointWidth: 50,
             pointPadding: 0,
-            groupPadding: 0,
+            groupPadding: 0.1,
             borderWidth: 0,
             shadow: false
         }

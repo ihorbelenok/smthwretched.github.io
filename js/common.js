@@ -73,6 +73,10 @@ $('.prof-skills').highcharts({
 		categories: ['HTML', 'CSS', 'jQuery', 'Django', 'Bootstrap' ,'Photoshop', 'Linux', 'SQL', 'Git'],
 		labels: {
 			style: {"color": "#f0f0f0", "shadow": "none", "fontSize": hc_fz},
+			align: 'left',
+			padding: 2,
+			reserveSpace: false,
+			x: 10,
 		},
 		gridLineColor: 'transparent',
 	},
@@ -88,6 +92,8 @@ $('.prof-skills').highcharts({
 	series: [{
 		name: '',
 		showInLegend: false,
+		pointPadding: 0,
+		groupPadding: 0,
 		data: [90, 80, 70, 50, 100, 50, 80, 70, 80],
 	}]
 });
@@ -107,6 +113,10 @@ $('.pers-skills').highcharts({
 		categories: ['Attentive', 'Accurate', 'Cooperative', 'Dedicated', 'Efficient', 'Flexible', 'Motivated', 'Reliable', 'Responsible'],
 		labels: {
 			style: {"color": "#f0f0f0", "shadow": "none", "fontSize": hc_fz},
+			align: 'left',
+			padding: 2,
+			reserveSpace: false,
+			x: 10,
 		},
 		gridLineColor: 'transparent',
 		opposite: false,
@@ -122,6 +132,8 @@ $('.pers-skills').highcharts({
 	},
 	series: [{
 		name: '',
+		pointPadding: 0,
+		groupPadding: 0,
 		showInLegend: false,
 		data: [80, 90, 75, 100, 100, 80, 80, 90, 80],
 	}]

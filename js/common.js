@@ -53,6 +53,11 @@ else {
 	});
 }
 
+var hc_fz = "14px";
+if ($(window).width() <= 768){
+	hc_fz = "12px";
+}
+
 $('.prof-skills').highcharts({
 	chart: {
 		type: 'bar',
@@ -67,7 +72,7 @@ $('.prof-skills').highcharts({
 	xAxis: {
 		categories: ['HTML', 'CSS', 'jQuery', 'Django', 'Bootstrap' ,'Photoshop', 'Linux', 'SQL', 'Git'],
 		labels: {
-			style: {"color": "#f0f0f0", "shadow": "none", "fontSize": "14px"},
+			style: {"color": "#f0f0f0", "shadow": "none", "fontSize": hc_fz},
 		},
 		gridLineColor: 'transparent',
 	},
@@ -101,7 +106,7 @@ $('.pers-skills').highcharts({
 	xAxis: {
 		categories: ['Attentive', 'Accurate', 'Cooperative', 'Dedicated', 'Efficient', 'Flexible', 'Motivated', 'Reliable', 'Responsible'],
 		labels: {
-			style: {"color": "#f0f0f0", "shadow": "none", "fontSize": "14px"},
+			style: {"color": "#f0f0f0", "shadow": "none", "fontSize": hc_fz},
 		},
 		gridLineColor: 'transparent',
 		opposite: false,

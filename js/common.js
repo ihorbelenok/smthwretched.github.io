@@ -29,7 +29,7 @@ $(window).load(function() {
 if ($(window).width() <= 320) {
 	$(".greeting").typed({
 		loop: false,
-		strings: ["a web-developer", "a freelancer", "Antik"],
+		strings: ["Antik"],
 		typeSpeed: 25,
 		backSpeed: 10,
 		startDelay: 500,
@@ -42,7 +42,7 @@ if ($(window).width() <= 320) {
 else {
 	$(".greeting").typed({
 		loop: false,
-		strings: ["Antik"],
+		strings: ["a web-developer", "a freelancer", "Antik"],
 		typeSpeed: 25,
 		backSpeed: 10,
 		startDelay: 500,

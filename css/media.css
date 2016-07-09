@@ -1,5 +1,12 @@
 /*==========  Desktop First Method  ==========*/
 
+@media only screen and (max-height: 320px) {
+	.prof-skills,
+	.pers-skills {
+		height: 200px;
+	}
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 	.first-line {

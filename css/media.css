@@ -5,12 +5,21 @@
 	.top-container {
 		font-size: 34px;
 	}
+
+	.arrow {
+		font-size: 32px;
+		line-height: 32px;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 	.top-container {
 		font-size: 26px;
+	}
+	.arrow {
+		font-size: 26px;
+		line-height: 26px;
 	}
 }
 
@@ -41,6 +50,10 @@
 		-ms-animation: none !important;
 		animation: none !important;
 	}
+	.arrow {
+		font-size: 24px;
+		line-height: 24px;
+	}
 
 }
 
@@ -58,12 +71,20 @@
 	.second-line{
 		font-size: 16px;
 	}
+	.arrow {
+		font-size: 20px;
+		line-height: 20px;
+	}
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 	.first-line{
 		font-size: 20px;
+	}
+	.arrow {
+		font-size: 18px;
+		line-height: 18px;
 	}
 }
 

@@ -92,10 +92,8 @@ body {
 	border: 1px solid #ffffff;
 }
 
-section {
-	background-color: rgba(0,0,0,.5);
-	min-height: 100vh;
-	z-index: 0;
+.container {
+	padding: 0 40px !important;
 }
 
 .top-container {
@@ -240,23 +238,23 @@ section {
 }
 
 .arrow-down {
-	bottom: 10px;
+	bottom: 15px;
 	width: 100%;
 	text-align: center;
 }
 
 .arrow-left {
-	top: 50vh;
-	left: 40px;
+	top: 49vh;
+	left: 15px;
 }
 
 .arrow-right {
-	top: 50vh;
-	right: 40px;
+	top: 49vh;
+	right: 15px;
 }
 
 .arrow-up {
-	top: 20px;
+	top: 15px;
 	width: 100%;
 	text-align: center;
 }

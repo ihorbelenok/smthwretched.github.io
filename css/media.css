@@ -30,8 +30,12 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	.first-line {
-		font-size: 18px;
+		font-size: 24px;
 		font-weight: normal;
+	}
+
+	.second-line {
+		font-size: 18px;
 	}
 	
 	/*Disable Animation on Mobile Devices*/
@@ -74,7 +78,7 @@
 		font-size: 20px;
 	}
 	.second-line{
-		font-size: 16px;
+		font-size: 14px;
 	}
 	.arrow {
 		font-size: 20px;

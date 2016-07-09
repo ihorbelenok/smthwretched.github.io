@@ -73,6 +73,11 @@ body {
 	top: 0;
 	height: 110vh;
 	width: 110vw;
+
+	background-color: #282828;
+	background-image: url("");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 section {
@@ -259,5 +264,3 @@ section {
 	background-color: rgba(241,241,241,.3);
 	transition: all .4s linear;
 }
-
-

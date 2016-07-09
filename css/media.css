@@ -29,6 +29,10 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	.highcharts-axis-labels{
+		font-size: 12px;
+	}
+
 	.top-container .row {
 		padding-top: 40vh;
 	}
@@ -72,6 +76,10 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	body {
+		font-size: 16px;
+	}
+
 	.top-container .row {
 		padding-top: 32vh;
 	}
@@ -92,11 +100,20 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+	body {
+		font-size: 10px;
+	}
+
+	#skills p {
+	    text-align: justify;
+	    padding: 5px 0;
+	}
+
 	.top-container .row {
-		padding-top: 50px;
+		padding-top: 100px;
 	}
 	.first-line{
-		font-size: 14px;
+		font-size: 18px;
 	}
 	.second-line{
 		font-size: 12px;

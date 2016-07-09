@@ -73,7 +73,7 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	.top-container .row {
-		padding-top: 35vh;
+		padding-top: 38vh;
 	}
 	.top-text {
 		display: block;
@@ -92,6 +92,7 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+
 	.first-line{
 		font-size: 16px;
 	}

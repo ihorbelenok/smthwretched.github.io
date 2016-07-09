@@ -129,7 +129,7 @@ section {
 }
 
 .typed-cursor{
-	color: #f0f0f0 !important;
+	color: #dd3154 !important;
     opacity: 1;
     -webkit-animation: blink 1s infinite;
     -moz-animation: blink 1s infinite;

@@ -179,7 +179,7 @@ body {
 
 .portfolio-pic:hover img{
 	transform: scale(1.2);
-	opacity: .4;
+	opacity: .2;
 	transition: all .4s linear;
 	image-rendering: optimizeQuality;
 }
@@ -193,34 +193,28 @@ body {
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
-	padding: 20% 0;
+	padding: 10% 0;
 }
 
-.portfolio-pic>.overlay>a {
-	color: #f1f1f1;
+.portfolio-pic>.overlay>.overlay-text {
 	display: none;
-	font-size: 24px;
-	border: #f1f1f1 2px solid;
-	border-radius: 50%;
-	text-align: center;
-	width: 56px;
-	height: 56px;
-	line-height: 56px;
-	margin: 0 5px;
+	margin-bottom: 20px;
 }
 
-.portfolio-pic>.overlay>a i.fa-mobile {
-	font-size: 28px !important;
+.portfolio-name {
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #dd3154;
+	font-weight: bold;
 }
 
-.portfolio-pic:hover>.overlay>a {
-	display: inline-block;
-	transition: all .4s linear;
+.portfolio-description {
+	font-size: 16px;
+	padding: 5px 20px;
 }
 
-.portfolio-pic:hover>.overlay>a:hover {
-	background-color: rgba(241,241,241,.3);
-	transition: all .4s linear;
+.portfolio-pic:hover>.overlay>.overlay-text {
+	display: block;
 }
 
 .arrow {
@@ -256,4 +250,18 @@ body {
 
 .fp-controlArrow {
 	display: none;
+}
+
+.view-btn {
+	display: inline-block;
+	padding: 5px 15px;
+	font-weight: bold;
+	font-size: 20px;
+	background-color: #dd3154;
+	color: #ffffff;
+}
+
+.view-btn:hover,.view-btn:focus,.view-btn:active {
+	color: #ffffff;
+	text-decoration: none;
 }

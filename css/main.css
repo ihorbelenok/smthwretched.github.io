@@ -293,6 +293,8 @@ body {
 	background-color: #dd3154;
 }
 
-.btn-success:hover, .btn-success:focus {
+.btn-success:hover, .btn-success:focus, .btn-success:active {
 	background-color: #dd3154;
+	border: none;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(221,49,84,.6);
 }
